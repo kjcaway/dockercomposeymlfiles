@@ -14,3 +14,7 @@ docker pull mysql:8.0.22
 ## docker-compose.yml 파일 경로로 이동해서
 docker-compose -f ./docker-compose.yml up -d
 ```
+3. 중지
+```bash
+docker-compose down
+```
