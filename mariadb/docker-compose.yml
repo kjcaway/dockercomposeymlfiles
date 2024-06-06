@@ -8,8 +8,8 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - /home/kang/mariadb/data:/var/lib/mysql
-      - /home/kang/mariadb/config:/etc/mysql/conf.d
+      - /Users/kjcaway/mnt/mariadb/data:/var/lib/mysql
+      - /Users/kjcaway/mnt/mariadb/config:/etc/mysql/conf.d
     environment:
       MYSQL_ROOT_PASSWORD: root
       TZ: Asia/Seoul

@@ -8,6 +8,6 @@ services:
         hostname: redis_boot
         command: redis-server
         volumes:
-            - /home/ubun2/redis/data:/data
-            - ./redis.conf:/usr/local/conf/redis.conf
+            - /Users/kjcaway/mnt/redis/data:/data
+            - /Users/kjcaway/mnt/redis/config/redis.conf:/usr/local/conf/redis.conf
         restart: always
