@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    restart: always
+    container_name: postgres_boot
+    hostname: postgres_boot
+    ports:
+      - "5432:5432"
+    volumes:
+      - /Users/jckang/mnt/postgres:/var/lib/postgresql/data
+    environment:      
+      POSTGRES_PASSWORD: root
