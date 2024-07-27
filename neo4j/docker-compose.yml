@@ -1,0 +1,11 @@
+services:
+  neo4j:
+    container_name: neo4j-boot
+    image: neo4j:5.22.0
+    ports:
+      - 7474:7474
+      - 7687:7687
+    volumes:
+      - /Users/jckang/mnt/neo4j/data:/data
+    environment:
+      NEO4J_AUTH: neo4j/{password}
